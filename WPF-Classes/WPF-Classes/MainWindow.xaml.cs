@@ -37,6 +37,7 @@ namespace WPF_Classes
             image = Imagetxt.Text;
             price = txtP.Text;
 
+            // validating if the user's input 
             if (string.IsNullOrEmpty(name)==true)
             {
                 MessageBox.Show("invalid name" );
@@ -53,7 +54,7 @@ namespace WPF_Classes
             {
                 MessageBox.Show("invalid price");
             }
-
+            // constructor 
             Toy ListToy = new Toy()
             {
                 Manufacturer = manufacturer, 
@@ -61,10 +62,10 @@ namespace WPF_Classes
                 image=image,
                 price=p, 
             };
-            TT.Items.Add(ListToy);
+            TT.Items.Add(ListToy);//adding to the listbox 
             }
 
-
+        //what is in the listbox 
         private void ListToy_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Toy selectedToy = (Toy)TT.SelectedItem;

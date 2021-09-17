@@ -25,15 +25,12 @@ namespace WPF_Classes
         }
         public string GetAisle()
         {
-            return $"{Manufacturer[0].ToString().ToUpper()}{price}";
-
-
-
+            return $"{Manufacturer[0].ToString().ToUpper()}{price}";//first letter of Manufacturer and price 
 
 
 
         }
-        public override string ToString()
+        public override string ToString() //override string? 
         {
             return $"{ Manufacturer} -{ Name}";
 
