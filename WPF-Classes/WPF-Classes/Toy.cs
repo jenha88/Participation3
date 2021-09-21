@@ -30,7 +30,7 @@ namespace WPF_Classes
 
 
         }
-        public override string ToString() //override string? 
+        public override string ToString() //string representation for the toy
         {
             return $"{ Manufacturer} -{ Name}";
 

@@ -65,7 +65,7 @@ namespace WPF_Classes
             TT.Items.Add(ListToy);//adding to the listbox 
             }
 
-        //what is in the listbox 
+        //uploading the image 
         private void ListToy_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Toy selectedToy = (Toy)TT.SelectedItem;
